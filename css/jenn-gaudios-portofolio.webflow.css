@@ -81,7 +81,7 @@ img {
   max-width: 100%;
 }
 
-.hero {
+.top {
   min-height: 700px;
   margin-bottom: 0px;
   padding-top: 0px;
@@ -94,26 +94,34 @@ img {
   opacity: 1;
 }
 
-.hero.small {
+.top.small {
   min-height: 410px;
 }
 
-.hero.sub-page {
+.top.sub-page {
   height: 62vh;
 }
 
-.hero.about-page {
+.top.about-page {
   min-height: 340px;
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .57), #222), url('../images/photo-1441716844725-09cedc13a4e7.jpg');
   background-image: linear-gradient(180deg, rgba(0, 0, 0, .57), #222), url('../images/photo-1441716844725-09cedc13a4e7.jpg');
   background-size: auto, cover;
 }
 
-.hero.contact-page {
+.top.contact-page {
+  display: block;
   min-height: 450px;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .57) 63%, #222), url('../images/Picture1.png');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .57) 63%, #222), url('../images/Picture1.png');
+  background-position: 0px 0px, 38% -91%;
+  background-size: auto, cover;
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
 }
 
-.hero.project-page {
+.top.project-page {
   min-height: 384px;
   opacity: 1;
   text-align: center;
@@ -261,6 +269,7 @@ img {
 }
 
 .footer {
+  position: static;
   margin-top: 29px;
   padding-top: 36px;
   padding-bottom: 36px;
@@ -524,7 +533,7 @@ img {
 
 .image-4 {
   position: relative;
-  top: 121px;
+  top: 0px;
   display: inline-block;
   overflow: auto;
   padding-top: 1px;
@@ -533,13 +542,13 @@ img {
 }
 
 .image-5 {
-  position: relative;
+  position: static;
   top: -122px;
 }
 
 .image-6 {
   position: relative;
-  top: 122px;
+  top: 0px;
   bottom: -119px;
 }
 
@@ -550,17 +559,70 @@ img {
   float: none;
 }
 
+.div-block-2 {
+  border-width: 15px;
+  -webkit-transition-property: none;
+  transition-property: none;
+}
+
+.image-7 {
+  display: block;
+}
+
+.div-block-3 {
+  margin-top: 34px;
+  margin-bottom: 20px;
+  padding-top: 1px;
+}
+
+.image-8 {
+  position: relative;
+}
+
+.link-block {
+  position: static;
+}
+
+.container {
+  margin-top: 41px;
+  margin-bottom: 99px;
+}
+
+.image-9 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.image-10 {
+  display: block;
+  margin-top: 37px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.paragraph-2 {
+  margin-top: 66px;
+  margin-bottom: 66px;
+}
+
+.paragraph-3 {
+  margin-top: 62px;
+  margin-bottom: 65px;
+}
+
 @media (max-width: 991px) {
-  .hero {
+  .top {
     min-height: 520px;
   }
-  .hero.about-page {
+  .top.about-page {
     min-height: 310px;
   }
-  .hero.contact-page {
+  .top.contact-page {
     min-height: 400px;
   }
-  .hero.project-page {
+  .top.project-page {
     min-height: 344px;
   }
   .nav {
@@ -588,19 +650,19 @@ img {
 }
 
 @media (max-width: 767px) {
-  .hero {
+  .top {
     min-height: 420px;
   }
-  .hero.small {
+  .top.small {
     min-height: 280px;
   }
-  .hero.about-page {
+  .top.about-page {
     min-height: 230px;
   }
-  .hero.contact-page {
+  .top.contact-page {
     min-height: 290px;
   }
-  .hero.project-page {
+  .top.project-page {
     min-height: 256px;
   }
   .nav {
@@ -632,13 +694,13 @@ img {
 }
 
 @media (max-width: 479px) {
-  .hero {
+  .top {
     min-height: 340px;
   }
-  .hero.about-page {
+  .top.about-page {
     min-height: 193px;
   }
-  .hero.project-page {
+  .top.project-page {
     min-height: 226px;
   }
   .form {
